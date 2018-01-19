@@ -38,3 +38,6 @@ print(s1+'\n'+s2)
 for n in range(len(vec2)):
     s3 = "%.4f %8.4f" % (vec2[n, 0], vec2[n, 1])
     print(s3)
+	
+# Add a cool comment
+print('Hello world')
