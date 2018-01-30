@@ -47,7 +47,7 @@ os.startfile(figFileName)  # Open figure via external photos program
 ###############################################################################
 
 # Plot momentum flux vs blowing ratio
-fig, ax = plt.subplots(dpi=320)
+fig, ax = plt.subplots()
 plt.plot(br, i, ls='dashed', lw=3)
 plt.xlabel('BR', fontsize=fs, fontname=fn, fontweight='bold')
 plt.ylabel('I     ', fontsize=fs, rotation=0, fontname=fn, fontweight='bold')
@@ -55,5 +55,5 @@ plt.xticks(fontsize=fs-5, fontname=fn, fontweight='bold')
 plt.yticks(fontsize=fs-5, fontname=fn, fontweight='bold')
 ax.get_xaxis().set_tick_params(direction='in', bottom='on', top='on')
 ax.get_yaxis().set_tick_params(direction='in', left='on', right='on')
-plt.savefig(fig2FileName)
-plt.close(fig)
+plt.savefig(fig2FileName, dpi=320)
+plt.close(fig)  # close the figure
